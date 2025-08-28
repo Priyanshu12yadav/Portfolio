@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priyanshu Yadav | Portfolio</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="https://kit.fontawesome.com/269291aa7c.js" crossorigin="anonymous"></script>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-800 text-white transition-colors duration-500" id="theme">
+    
+  <div id="intro-screen">
+    <h1 class="text-4xl font-bold glow-text mb-6">Welcome to My Portfolio</h1>
+    <button onclick="enterSite()">Get Started</button>
+  </div>
+
+  <nav class="flex justify-between items-center p-5 bg-gray-800 shadow-lg fixed w-full z-50">
+    <h1 class="text-2xl font-bold glow-text hover:text-yellow-400">Priyanshu Yadav</h1>
+    <div class="space-x-6">
+      <a href="#home" class="hover:text-yellow-400">Home</a>
+      <a href="#about" class="hover:text-cyan-400">About</a>
+      <a href="#skills" class="hover:text-cyan-400">Skills</a>
+      <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#contact" class="hover:text-cyan-400">Contact</a>
+      <button onclick="toggleTheme()" class="ml-4 p-2 rounded-full bg-gray-700">
+        <i id="theme-icon" class="fas fa-moon text-yellow-400"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section id="home" class="flex flex-col justify-center items-center h-screen pop-up">
+    <img src="assets/priyanshu.jpg" alt="Profile" class="square-full w-40 h-50 border-4 border-cyan-400 mb-5 animate-none">
+    <h2 class="text-5xl font-extrabold glow-text animate-pulse">I’m Priyanshu Yadav</h2>
+    <p class="mt-3 text-lg">Aspiring Developer | Computer Science Student</p>
+    <div class="mt-6 space-x-4">
+      <a href="https://github.com/Priyanshu12yadav" class="p-3 bg-cyan-500 rounded-lg hover:shadow-xl">GitHub</a>
+      <a href="https://www.linkedin.com/in/priyanshu-yadav-6160bb258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-3 bg-cyan-500 rounded-lg hover:shadow-xl">LinkedIn</a>
+      <a href="assets/PRIYANSHU YADAV RESUME.pdf" download class="p-3 bg-green-500 rounded-lg hover:shadow-xl">Download Resume</a>
+    </div>
+  </section>
+
+  <section id="about" class="p-10 pop-up">
+    <h2 class="text-3xl font-bold glow-text mb-5">About Me</h2>
+    <p class="max-w-3xl">
+      I am a Software Engineering student passionate about building impactful solutions. I specialize in developing software that bridges technology and real-world challenges, ensuring efficiency, usability, and meaningful impact.
+      My work spans web development, driven by a belief that technology should solve problems, not create them. I am dedicated to crafting scalable, effective, and user-centric solutions while fostering a culture of collaboration, knowledge-sharing, and continuous improvement.
+    </p>
+    <p class="mt-6 italic text-cyan-300 text-lg">
+      A Student Fueled By Curiosity, Innovative Ideas And Continuous Learning, Figuring Out Stuff !!
+    </p>
+  </section>
+
+  <section id="skills" class="p-10 bg-gray-800 pop-up">
+    <h2 class="text-3xl font-bold glow-text mb-5">Skills</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
+        <h3 class="text-xl font-bold text-cyan-400">Programming</h3>
+        <p>C, C++, Python, MySQL</p>
+      </div>
+      <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
+        <h3 class="text-xl font-bold text-cyan-400">Web Development</h3>
+        <p>HTML, CSS, JavaScript</p>
+      </div>
+      <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
+        <h3 class="text-xl font-bold text-cyan-400">Tools</h3>
+        <p>GitHub, VS Code, Canva, Latex</p>
+      </div>
+      <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
+        <h3 class="text-xl font-bold text-cyan-400">Soft Skills</h3>
+        <p>Teamwork, Leadership, Communication, Adaptability</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="p-10 pop-up">
+    <h2 class="text-3xl font-bold glow-text mb-5">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
+        <img src="dummy-project1.jpg" class="rounded-lg mb-3" alt="DermaClust Project">
+        <h3 class="text-xl font-bold">DermaClust</h3>
+        <p>Deep learning skincare recommendation system using U-Net & Transformer Encoders.</p>
+        <div class="flex gap-2 mt-2">
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Deep Learning</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Python</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Web</span>
+        </div>
+        <a href="enter-the-link" class="block mt-3 text-cyan-400 hover:underline">View Project</a>
+      </div>
+
+      <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
+        <img src="dummy-project2.jpg" class="rounded-lg mb-3" alt="Railway Project">
+        <h3 class="text-xl font-bold">Railway Reservation System</h3>
+        <p>Relational database system for train reservations and passenger management.</p>
+        <div class="flex gap-2 mt-2">
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">SQL</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Database</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">C++</span>
+        </div>
+        <a href="enter-the-link" class="block mt-3 text-cyan-400 hover:underline">View Project</a>
+      </div>
+
+      <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
+        <img src="dummy-project3.jpg" class="rounded-lg mb-3" alt="Portfolio Website">
+        <h3 class="text-xl font-bold">Responsive Portfolio Website</h3>
+        <p>A modern portfolio website built with HTML, CSS (Tailwind), and JavaScript.</p>
+        <div class="flex gap-2 mt-2">
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">HTML</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">CSS (Tailwind)</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">JavaScript</span>
+        </div>
+        <a href="enter-the-link" class="block mt-3 text-cyan-400 hover:underline">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="p-10 bg-gray-800 pop-up">
+    <h2 class="text-3xl font-bold glow-text mb-5">Contact Me</h2>
+    <form id="contact-form" class="grid gap-4 max-w-lg">
+      <input type="text" name="from_name" placeholder="Enter your name" class="p-3 rounded text-black" required>
+      <input type="email" name="from_email" placeholder="Enter your email" class="p-3 rounded text-black" required>
+      <textarea name="message" placeholder="Enter your message" class="p-3 rounded text-black" required></textarea>
+      <button type="submit" class="p-3 bg-cyan-500 rounded-lg hover:shadow-xl">Send Message</button>
+    </form>
+    <div class="mt-6">
+      <p>Email: <a href="mailto:yadavpriyanshu975@gmail.com" class="text-cyan-400">yadavpriyanshu975@gmail.com</a></p>
+      <p>Phone: <a href="tel:7972968334" class="text-cyan-400">7972968334</a></p>
+    </div>
+  </section>
+
+  <footer class="p-5 text-center bg-gray-900">
+    <p>© 2025 Priyanshu Yadav. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>

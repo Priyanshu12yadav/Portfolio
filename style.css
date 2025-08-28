@@ -1,0 +1,96 @@
+html { 
+  scroll-behavior: smooth; 
+}
+
+.glow-text { 
+  text-shadow: 0px 0px 10px cyan; 
+}
+
+.project-slide { 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.project-slide:hover { 
+  transform: scale(1.05); 
+}
+
+button:hover { 
+  transform: scale(1.05); 
+  transition: 0.3s; 
+  box-shadow: 0 0 15px cyan; 
+}
+
+/* 🔹 Popup animation */
+.pop-up { 
+  opacity: 0; 
+  transform: translateY(30px); 
+  transition: all 1s ease; 
+}
+
+.show { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* 🔹 Background glowing animation */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: radial-gradient(circle, rgba(0,255,255,0.1) 1%, transparent 50%);
+  background-size: 200px 200px;
+  animation: move 66s linear infinite;
+  z-index: -1;
+}
+
+@keyframes move {
+  from { background-position: 0 0; }
+  to { background-position: 1000px 1000px; }
+}
+
+/* 🔹 Fullscreen Get Started page */
+#intro-screen {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: linear-gradient(135deg, #033c3f 0%, #22023e 100%);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+  animation: introFadeIn 1.2s cubic-bezier(0.4,0,0.2,1);
+}
+
+@keyframes introFadeIn {
+  from { opacity: 0; transform: scale(1.08); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+#intro-screen h1 {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #044245cf, 0 0 20px #4a0f92; }
+  to   { text-shadow: 0 0 30px #022c2e, 0 0 60px #51078d; }
+}
+
+#intro-screen button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background: cyan;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#intro-screen button:hover { 
+  background: #00e5ff; 
+  box-shadow: 0 0 20px cyan; 
+}
