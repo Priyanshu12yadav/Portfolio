@@ -6,13 +6,11 @@
   <title>Priyanshu Yadav | Portfolio</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <script src="https://kit.fontawesome.com/269291aa7c.js" crossorigin="anonymous"></script>
-  
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-800 text-white transition-colors duration-500" id="theme">
-    
+
   <div id="intro-screen">
     <h1 class="text-4xl font-bold glow-text mb-6">Welcome to My Portfolio</h1>
     <button onclick="enterSite()">Get Started</button>
@@ -25,6 +23,8 @@
       <a href="#about" class="hover:text-cyan-400">About</a>
       <a href="#skills" class="hover:text-cyan-400">Skills</a>
       <a href="#projects" class="hover:text-cyan-400">Projects</a>
+      <a href="#leadership" class="hover:text-cyan-400">Leadership</a>
+      <a href="#certifications" class="hover:text-cyan-400">Certifications</a>
       <a href="#contact" class="hover:text-cyan-400">Contact</a>
       <button onclick="toggleTheme()" class="ml-4 p-2 rounded-full bg-gray-700">
         <i id="theme-icon" class="fas fa-moon text-yellow-400"></i>
@@ -35,22 +35,20 @@
   <section id="home" class="flex flex-col justify-center items-center h-screen pop-up">
     <img src="assets/priyanshu.jpg" alt="Profile" class="square-full w-40 h-50 border-4 border-cyan-400 mb-5 animate-none">
     <h2 class="text-5xl font-extrabold glow-text animate-pulse">I’m Priyanshu Yadav</h2>
-    <p class="mt-3 text-lg">Aspiring Developer | Computer Science Student</p>
+    <p class="mt-3 text-lg">Aspiring Computer Science Student | AI & Web Developer</p>
     <div class="mt-6 space-x-4">
       <a href="https://github.com/Priyanshu12yadav" class="p-3 bg-cyan-500 rounded-lg hover:shadow-xl">GitHub</a>
-      <a href="https://www.linkedin.com/in/priyanshu-yadav-6160bb258/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-3 bg-cyan-500 rounded-lg hover:shadow-xl">LinkedIn</a>
-      <a href="assets/PRIYANSHU YADAV RESUME.pdf" download class="p-3 bg-green-500 rounded-lg hover:shadow-xl">Download Resume</a>
+      <a href="https://www.linkedin.com/in/priyanshu-yadav-6160bb258" class="p-3 bg-cyan-500 rounded-lg hover:shadow-xl">LinkedIn</a>
+      <a href="assets/Priyanshu_Yadav_Resume.pdf" download class="p-3 bg-green-500 rounded-lg hover:shadow-xl">Download Resume</a>
     </div>
   </section>
 
   <section id="about" class="p-10 pop-up">
     <h2 class="text-3xl font-bold glow-text mb-5">About Me</h2>
     <p class="max-w-3xl">
-      I am a Software Engineering student passionate about building impactful solutions. I specialize in developing software that bridges technology and real-world challenges, ensuring efficiency, usability, and meaningful impact.
-      My work spans web development, driven by a belief that technology should solve problems, not create them. I am dedicated to crafting scalable, effective, and user-centric solutions while fostering a culture of collaboration, knowledge-sharing, and continuous improvement.
-    </p>
-    <p class="mt-6 italic text-cyan-300 text-lg">
-      A Student Fueled By Curiosity, Innovative Ideas And Continuous Learning, Figuring Out Stuff !!
+      I am an aspiring Computer Science student with hands-on experience in Artificial Intelligence, Machine Learning, Web Development, and Automation projects. 
+      I have built projects involving real-time data processing, AI integration, and web-based systems. My interests include system design, innovation, and solving practical problems with technology. 
+      Passionate about continuous learning, I thrive on curiosity, collaboration, and impactful solutions.
     </p>
   </section>
 
@@ -59,19 +57,23 @@
     <div class="grid md:grid-cols-3 gap-6">
       <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
         <h3 class="text-xl font-bold text-cyan-400">Programming</h3>
-        <p>C, C++, Python, MySQL</p>
+        <p>Python, C, C++, Java, JavaScript, HTML, CSS</p>
       </div>
       <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
-        <h3 class="text-xl font-bold text-cyan-400">Web Development</h3>
-        <p>HTML, CSS, JavaScript</p>
+        <h3 class="text-xl font-bold text-cyan-400">Frameworks & Tools</h3>
+        <p>React, NodeJS, ExpressJS, Bootstrap, GitHub, VS Code, Canva, Latex</p>
       </div>
       <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
-        <h3 class="text-xl font-bold text-cyan-400">Tools</h3>
-        <p>GitHub, VS Code, Canva, Latex</p>
+        <h3 class="text-xl font-bold text-cyan-400">Databases</h3>
+        <p>MySQL, PostgreSQL, MongoDB</p>
+      </div>
+      <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
+        <h3 class="text-xl font-bold text-cyan-400">Core CS</h3>
+        <p>Data Structures & Algorithms, OOP, DBMS, Data Preprocessing, Data Visualization</p>
       </div>
       <div class="p-5 bg-gray-900 rounded-xl shadow-lg hover:shadow-cyan-500/50 transition pop-up">
         <h3 class="text-xl font-bold text-cyan-400">Soft Skills</h3>
-        <p>Teamwork, Leadership, Communication, Adaptability</p>
+        <p>Teamwork, Communication, Adaptability, Problem Solving, Leadership, Time Management</p>
       </div>
     </div>
   </section>
@@ -79,42 +81,110 @@
   <section id="projects" class="p-10 pop-up">
     <h2 class="text-3xl font-bold glow-text mb-5">Projects</h2>
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
-        <img src="dummy-project1.jpg" class="rounded-lg mb-3" alt="DermaClust Project">
-        <h3 class="text-xl font-bold">DermaClust</h3>
-        <p>Deep learning skincare recommendation system using U-Net & Transformer Encoders.</p>
-        <div class="flex gap-2 mt-2">
-          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Deep Learning</span>
-          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Python</span>
-          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Web</span>
-        </div>
-        <a href="enter-the-link" class="block mt-3 text-cyan-400 hover:underline">View Project</a>
-      </div>
+
+     <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
+  <img src="path/to/your/screenshot.jpg" class="rounded-lg mb-3" alt="DermaClust AI Skincare Recommender">
+  
+  <h3 class="text-xl font-bold">DermaClust: AI Skincare Recommender</h3>
+  
+  <p>A dual-model recommendation system that analyzes user skin from images (CNN) and product ingredients (NLP) to provide personalized skincare suggestions via a web-based interface.</p>
+  
+  <div class="flex gap-2 mt-2 flex-wrap">
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Python</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">TensorFlow</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Keras</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Streamlit</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Scikit-learn</span>
+  </div>
+  
+  <a href="https://github.com/Priyanshu12yadav/Dermaclust-A-Skincare-Recommendation-System " class="block mt-3 text-cyan-400 hover:underline">[Code]</a>
+  </div>
 
       <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
-        <img src="dummy-project2.jpg" class="rounded-lg mb-3" alt="Railway Project">
-        <h3 class="text-xl font-bold">Railway Reservation System</h3>
-        <p>Relational database system for train reservations and passenger management.</p>
-        <div class="flex gap-2 mt-2">
-          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">SQL</span>
-          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Database</span>
-          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">C++</span>
-        </div>
-        <a href="enter-the-link" class="block mt-3 text-cyan-400 hover:underline">View Project</a>
-      </div>
+  <img src="subtrackr-project.jpg" class="rounded-lg mb-3" alt="SubTrackr Expense Tracker">
+  <h3 class="text-xl font-bold">SubTrackr — Full-Stack Expense Tracker</h3>
+  <p>A full-stack application to track expenses, manage budgets, and visualize spending, featuring secure JWT authentication and a RESTful API.</p>
+  <div class="flex flex-wrap gap-2 mt-2">
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Node.js</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Express.js</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">MongoDB</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">JavaScript</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">JWT</span>
+  </div>
+  <div class="mt-3">
+    <a href="https://github.com/Priyanshu12yadav/ExpenseTracker-App" target="_blank" class="text-cyan-400 hover:underline mr-3">[Code]</a>
+    <a href="https://subtrackrapp.netlify.app/" target="_blank" class="text-cyan-400 hover:underline">[Demo]</a>
+  </div>
+</div>
+
+      
 
       <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
-        <img src="dummy-project3.jpg" class="rounded-lg mb-3" alt="Portfolio Website">
+  
+  <img src="demo-screenshot.png" class="rounded-lg mb-3" alt="User Enquiry App Screenshot">
+  
+  <h3 class="text-xl font-bold">User Enquiry Management App</h3>
+  
+  <p>A full-stack MERN application for managing user enquiries with complete CRUD functionality, deployed on Render and MongoDB Atlas.</p>
+  
+  <div class="flex flex-wrap gap-2 mt-2">
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">React</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Node.js</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Express.js</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">MongoDB</span>
+    <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Tailwind CSS</span>
+  </div>
+  
+  <div class="mt-3 space-x-4">
+    <a href="https://github.com/Priyanshu12yadav/user-enquiry-mern-app" target="_blank" class="text-cyan-400 font-semibold hover:underline">[Code]</a>
+    <a href="https://user-enquiry-mern.onrender.com" target="_blank" class="text-cyan-400 font-semibold hover:underline">[Demo]</a>
+  </div>
+
+</div>
+
+      <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
+        <img src="dummy-project4.jpg" class="rounded-lg mb-3" alt="Portfolio Website">
         <h3 class="text-xl font-bold">Responsive Portfolio Website</h3>
-        <p>A modern portfolio website built with HTML, CSS (Tailwind), and JavaScript.</p>
+        <p>Personal portfolio built with HTML, Tailwind CSS, and JavaScript, featuring dark/light mode toggle and contact form validation.</p>
         <div class="flex gap-2 mt-2">
           <span class="px-2 py-1 bg-cyan-500 rounded text-sm">HTML</span>
           <span class="px-2 py-1 bg-cyan-500 rounded text-sm">CSS (Tailwind)</span>
           <span class="px-2 py-1 bg-cyan-500 rounded text-sm">JavaScript</span>
         </div>
-        <a href="enter-the-link" class="block mt-3 text-cyan-400 hover:underline">View Project</a>
+        <a href="#" class="block mt-3 text-cyan-400 hover:underline">[Code] [Demo]</a>
       </div>
+
+      <div class="project-slide bg-gray-900 p-5 rounded-lg shadow-lg hover:shadow-cyan-500/50">
+        <img src="dummy-project3.jpg" class="rounded-lg mb-3" alt="Railway Project">
+        <h3 class="text-xl font-bold">Railway Reservation Management System</h3>
+        <p>Relational database CRUD operations for managing train reservations, schedules, and passenger details.</p>
+        <div class="flex gap-2 mt-2">
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">SQL</span>
+          <span class="px-2 py-1 bg-cyan-500 rounded text-sm">Database</span>
+    
+        </div>
+        <a href="#" class="block mt-3 text-cyan-400 hover:underline"></a>
+      </div>
+
     </div>
+  </section>
+
+  <section id="leadership" class="p-10 bg-gray-800 pop-up">
+    <h2 class="text-3xl font-bold glow-text mb-5">Leadership & Experience</h2>
+    <ul class="list-disc ml-6 space-y-3">
+      <li><strong>IEEE Student Council - UMIT (Jul 2023 - Jul 2024):</strong> Organized hackathons, workshops, and innovation challenges for 200+ students, fostering collaboration and skill growth.</li>
+      <li><strong>Women in Engineering Council - UMIT (Jul 2022 - Jul 2023):</strong> Led mentorship programs and knowledge-sharing sessions to enhance technical and communication skills.</li>
+      <li><strong>National Service Scheme - UMIT (Jul 2023 - Present):</strong> Engaged in community service and social welfare projects, building leadership and teamwork skills.</li>
+    </ul>
+  </section>
+
+  <section id="certifications" class="p-10 pop-up">
+    <h2 class="text-3xl font-bold glow-text mb-5">Certifications</h2>
+    <ul class="list-disc ml-6 space-y-3">
+      <li>GeeksforGeeks Certification – Full Stack Developer</li>
+      <li>Python Programming & Machine Learning using Python</li>
+      <li>IBM Certified – From Learner to Builder: AI Agent Architect</li>
+    </ul>
   </section>
 
   <section id="contact" class="p-10 bg-gray-800 pop-up">
@@ -127,7 +197,7 @@
     </form>
     <div class="mt-6">
       <p>Email: <a href="mailto:yadavpriyanshu975@gmail.com" class="text-cyan-400">yadavpriyanshu975@gmail.com</a></p>
-      <p>Phone: <a href="tel:7972968334" class="text-cyan-400">7972968334</a></p>
+      <p>Phone: <a href="tel:7972968334" class="text-cyan-400">+91 7972968334</a></p>
     </div>
   </section>
 
@@ -136,8 +206,8 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  
   <script src="script.js"></script>
 
 </body>
 </html>
+
